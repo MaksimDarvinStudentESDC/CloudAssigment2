@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+
+  portfolio-service:
+    build: ./PortfolioService
+    ports:
+      - "8001:8001"
+    env_file:
+      - ./PortfolioService/.env
+
+  comment-service:
+    build: ./CommentService1
+    ports:
+      - "8003:8003"
+    env_file:
+      - ./CommentService1/.env
