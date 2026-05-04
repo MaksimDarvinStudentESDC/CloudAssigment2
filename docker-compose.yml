@@ -15,3 +15,8 @@ services:
       - "8003:8003"
     env_file:
       - ./CommentService1/.env
+
+  artwork-service:
+    build: ./ArtworkService1
+    ports:
+       - "8002:8002"
